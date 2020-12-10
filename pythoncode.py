@@ -12,8 +12,9 @@ print("ocr start")
 #commit 3
 
 def read_image(img):
-    pytesseract.pytesseract.tesseract_cmd =  './.apt/usr/share/tesseract-ocr/4.00/tessdata'
-   
+    pytesseract.pytesseract.tesseract_cmd =     './.apt/usr/bin/tesseract'
+
+    
     content = pytesseract.image_to_string(img)
     return content
 
