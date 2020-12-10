@@ -29,7 +29,7 @@ class ImageType (BaseModel):
             image_stream = io.BytesIO(file)
             image_stream.seek(0)
             filebytes = np.asarray(bytearray(image_stream.read()),dtype=np.uint8)
-            frame = cv2.imdecode(filebytes, cv2.IMREAD_ANYCOLOR)
+            frame = cv2.imdecode(filebytes, cv2.IMREAD_COLOR)
             label = read_image(frame)
             return label
         return "No POST req found"
