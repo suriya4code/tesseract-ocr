@@ -9,7 +9,7 @@ import re
 from pydantic import BaseModel
 
 print("ocr start")
-
+#commit 2
 
 def read_image(img):
     pytesseract.pytesseract.tesseract_cmd =     '/app/ .apt/usr/bin/tesseract'
