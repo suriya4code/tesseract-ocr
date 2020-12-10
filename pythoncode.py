@@ -21,7 +21,7 @@ app = FastAPI()
 class ImageType (BaseModel):
     url: str
 
-    app.post("/predict/")
+    @app.post("/predict/")
     def prediction(req : Request, file : bytes = File(...)):
         if req.method == "POST":
             image_stream = io.BytesIO(file)
