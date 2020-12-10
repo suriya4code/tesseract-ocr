@@ -1,6 +1,6 @@
 # tesseract-ocr
 
-### Pytesseract, Fast API app deployed in heroku to OCR image files on post requests
+### Pytesseract, Fast API python app deployed in heroku to OCR image files on post requests
 
 ## Try it out !!
 
